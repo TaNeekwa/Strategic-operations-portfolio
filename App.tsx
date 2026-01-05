@@ -1,6 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { SpeedInsights } from '@vercel/speed-insights/react';
+import { Analytics } from '@vercel/analytics/react';
 import Sidebar from './components/Sidebar';
 import TopNav from './components/TopNav';
 import ResumeModal from './components/ResumeModal';
@@ -87,6 +88,7 @@ const App: React.FC = () => {
       </main>
 
       <ResumeModal isOpen={isResumeOpen} onClose={() => setIsResumeOpen(false)} />
+      <Analytics />
       <SpeedInsights />
     </div>
   );
