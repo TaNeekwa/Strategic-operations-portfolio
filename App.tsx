@@ -14,11 +14,29 @@ import Contact from './sections/Contact';
 import DetailedExperience from './pages/DetailedExperience';
 import DetailedTools from './pages/DetailedTools';
 import AboutMe from './pages/AboutMe';
+import CoverLetter from './pages/CoverLetter';
 
 const App: React.FC = () => {
   const [activeSection, setActiveSection] = useState('home');
-  const [currentView, setCurrentView] = useState<'landing' | 'about-me' | 'experience' | 'tools'>('landing');
+  const [currentView, setCurrentView] = useState<'landing' | 'about-me' | 'experience' | 'tools' | 'cover-letter'>('landing');
   const [isResumeOpen, setIsResumeOpen] = useState(false);
+
+  // Handle URL hash for direct linking
+  useEffect(() => {
+    const handleHash = () => {
+      const hash = window.location.hash.replace('#', '');
+      if (hash === 'cover-letter') {
+        setCurrentView('cover-letter');
+      } else if (hash === 'experience') {
+        setCurrentView('experience');
+      } else if (hash === 'tools') {
+        setCurrentView('tools');
+      }
+    };
+    handleHash();
+    window.addEventListener('hashchange', handleHash);
+    return () => window.removeEventListener('hashchange', handleHash);
+  }, []);
 
   useEffect(() => {
     if (currentView !== 'landing') return;
@@ -73,6 +91,7 @@ const App: React.FC = () => {
         {currentView === 'about-me' && <AboutMe onBack={() => setCurrentView('landing')} />}
         {currentView === 'experience' && <DetailedExperience onBack={() => setCurrentView('landing')} />}
         {currentView === 'tools' && <DetailedTools onBack={() => setCurrentView('landing')} />}
+        {currentView === 'cover-letter' && <CoverLetter onBack={() => setCurrentView('landing')} />}
 
         <footer className="relative py-12 px-8 border-t border-white/5 bg-background-dark/80 backdrop-blur-md">
           <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 text-neutral-text text-sm">
