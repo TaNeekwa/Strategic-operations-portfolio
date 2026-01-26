@@ -14,19 +14,24 @@ const DetailedExperience: React.FC<DetailedExperienceProps> = ({ onBack }) => {
       company: 'FlexGen',
       url: 'https://flexgen.com',
       logo: 'FG',
-      role: 'Proposal Coordinator (Contract)',
+      role: 'Proposal Coordinator/Automations Specialist (Contract)',
       period: 'March 2025 — Present',
       summary: 'Owning the end-to-end proposal lifecycle for Energy Management Systems (EMS) and Full-Product offerings.',
-      overview: 'Own and coordinate the end-to-end proposal lifecycle for Energy Management System (EMS) and Full-Product offerings, supporting pricing validation, scope alignment, and timely delivery of client-ready proposals. Act as a central liaison between Business Development, Tendering, Engineering, and Operations teams.',
-      stakeholders: 'Business Development, Tendering, Engineering, Operations',
+      overview: 'Own and coordinate the end-to-end proposal lifecycle for Energy Management System (EMS) and Full-Product offerings, supporting pricing validation, scope alignment, and timely delivery of client-ready proposals. Serve as the central point of contact between BD, Engineering, Operations, and vendors—coordinating inputs, aligning scope, and ensuring proposals are technically accurate, commercially sound, and operationally executable.',
+      stakeholders: 'Business Development, Engineering, Operations, Vendors, Leadership',
       responsibilities: [
-        'Coordinate multi-team inputs to ensure proposals are technically accurate and commercially sound.',
-        'Refine content for clarity, accuracy, and alignment with complex customer requirements.',
-        'Analyze bid request documents (RFPs, RFQs, and RFIs) to extract critical decision-making insights.',
-        'Manage document control and version tracking using SharePoint.',
-        'Manage sensitive operational and customer-facing data with high integrity and accountability.'
+        'Own end-to-end proposal coordination, managing timelines, deliverables, and cross-functional inputs.',
+        'Serve as central liaison between BD, Engineering, Operations, and external vendors.',
+        'Contribute directly to proposal content development, reviewing and refining sections for clarity, accuracy, and alignment with customer requirements.',
+        'Analyze bid request documents (RFPs, RFQs, and RFIs), extracting critical information and sharing key insights with the proposal team.',
+        'Manage document control and data flow using SharePoint, Salesforce, and Excel—ensuring accuracy, version control, and timely access for cross-functional teams.',
+        'Coordinate vendor quotes, technical inputs, and pricing details across internal teams and external partners.',
+        'Validate pricing and ensure alignment between scope, cost, and customer expectations.',
+        'Prepare and assemble final bid packages, proposals, and client-ready presentations.',
+        'Maintain high levels of integrity, accuracy, and accountability while managing sensitive operational and customer-facing data.',
+        'Identify process inefficiencies and build automation tools to reduce manual effort and errors.'
       ],
-      tools: ['Excel (Advanced)', 'Salesforce', 'PowerPoint', 'SharePoint', 'Document Control'],
+      tools: ['Excel (Advanced)', 'Salesforce', 'PowerPoint', 'SharePoint', 'Document Control', 'Word', 'Proposal Automation Tools'],
       references: [
         {
           name: 'Antonio Wade',
@@ -64,15 +69,19 @@ const DetailedExperience: React.FC<DetailedExperienceProps> = ({ onBack }) => {
       role: 'Client Service Coordinator',
       period: 'July 2024 — March 2025',
       summary: 'Managing candidate lifecycles for high-profile accounts like Charles Schwab, Cigna, and Cencora.',
-      overview: 'Served as the main point of contact for multiple high-profile client accounts, managing the entire candidate lifecycle from offers and onboarding to compliance and performance tracking.',
-      stakeholders: 'Charles Schwab, Cigna, Cencora, Hiring Managers, Recruiters',
+      overview: 'Served as the main point of contact for multiple high-profile client accounts, including Charles Schwab, Cigna, and Cencora, managing contractor agreements and the entire candidate lifecycle from offers and onboarding to compliance and performance tracking.',
+      stakeholders: 'Charles Schwab, Cigna, Cencora, Hiring Managers, Recruiters, Onboarding Teams',
       responsibilities: [
-        'Own end-to-end onboarding coordination, ensuring compliance within strict deadlines.',
-        'Streamline workflows and documentation processes between recruitment and onboarding teams.',
-        'Implement standardized reporting systems to improve operational efficiency.',
-        'Identify and resolve inefficiencies proactively to enhance candidate experience.'
+        'Own end-to-end onboarding coordination with strict documentation and deadline requirements—background checks, I-9s, fingerprinting, and compliance tracking.',
+        'Maintain accurate records across multiple accounts and systems, ensuring compliance, audit readiness, and clean data for reporting.',
+        'Work closely with hiring managers, recruiters, and onboarding teams to streamline workflows, improve documentation processes, and enhance communication between stakeholders.',
+        'Spearhead process improvements by implementing tracking templates, standardized documentation, and structured reporting systems to improve efficiency and reduce errors.',
+        'Manage time-sensitive projects under tight deadlines, proactively identifying inefficiencies and implementing solutions that drive better candidate experience.',
+        'Track and report on onboarding status, compliance milestones, and account metrics.',
+        'Coordinate communication between clients, candidates, and internal teams to ensure smooth handoffs.',
+        'Resolve escalations and address documentation gaps before they impact deadlines.'
       ],
-      tools: ['Background Screening Systems', 'Compliance Portals', 'CRM Tracking'],
+      tools: ['Background Screening Systems', 'Compliance Portals', 'CRM Tracking', 'Excel', 'Document Management Systems'],
       references: [
         {
           name: 'Cynthia Alley',
@@ -104,17 +113,29 @@ const DetailedExperience: React.FC<DetailedExperienceProps> = ({ onBack }) => {
       role: 'Sales & Implementation Coordinator',
       period: 'August 2023 — February 2024',
       summary: 'Led end-to-end client onboarding and implementation onto the Viventium payroll platform.',
-      overview: 'Led end-to-end client onboarding and implementation onto the Viventium payroll platform—managing data extraction, migration, and documentation from contract signature through system handoff.',
-      stakeholders: 'Sales Representatives, Payroll Implementation Specialists, IT',
+      overview: 'Spearheaded seamless onboarding of new clients onto the Viventium payroll platform, from contract signature through system handoff, assuming the pivotal role as primary point of contact throughout various stages and lifecycles.',
+      stakeholders: 'Sales Representatives, Payroll Implementation Specialists, IT, Clients',
       responsibilities: [
-        'Manage all contracts and proposals using CRM systems (Salesforce/Asana).',
-        'Own data extraction and migration from multiple payroll platforms (Gusto, Heartland, Paylocity).',
-        'Organize and validate large volumes of payroll data and Excel-based reports for clean system import.',
-        'Coordinate payroll extraction and secure essential tax documentation.',
-        'Conduct weekly team meetings to address account status and missing documentation.',
-        'Simultaneously manage multiple onboarding projects to meet revenue deadlines.'
+        'Own the client database and document management throughout the implementation lifecycle, ensuring data integrity and seamless handoff to the onboarding team.',
+        'Draft, review, and manage all client contracts and proposals using CRM and database systems (Salesforce/Asana), ensuring strict compliance with business requirements and regulatory standards.',
+        'Own data extraction and migration from various payroll platforms (Gusto, Heartland, Paylocity), organizing and validating employee records, payroll data, and Excel-based reports to ensure accurate, import-ready documentation.',
+        'Partner with sales reps to track account status, flag missing documentation, and keep implementations on schedule.',
+        'Manage multiple client onboarding projects simultaneously under tight deadlines to meet revenue targets.',
+        'Coordinate payroll extraction and secure essential tax documentation from clients and prior providers.',
+        'Conduct weekly team meetings to address account status, blockers, and missing documentation.',
+        'Maintain accurate documentation throughout the client lifecycle, ensuring audit readiness and compliance.',
+        'Communicate proactively with clients to gather required information and set expectations on timelines.',
+        'Validate data accuracy before system import to prevent errors and rework.'
       ],
-      tools: ['Salesforce', 'Asana', 'Excel (Advanced)', 'Gusto', 'Heartland', 'Paylocity'],
+      tools: ['Salesforce', 'Asana', 'Excel (Advanced)', 'Gusto', 'Heartland', 'Paylocity', 'Document Management'],
+      references: [
+        {
+          name: 'Charles Christy',
+          role: 'Account Executive',
+          email: 'charles.christy1210@gmail.com',
+          linkedin: 'https://www.linkedin.com/in/charles-christy-1a824a171/'
+        }
+      ],
       projects: [
         {
           name: 'Data Transformation Suite',

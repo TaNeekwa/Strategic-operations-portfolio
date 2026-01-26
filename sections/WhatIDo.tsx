@@ -1,11 +1,13 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 
 interface WhatIDoProps {
   id: string;
 }
 
 const WhatIDo: React.FC<WhatIDoProps> = ({ id }) => {
+  const [currentPage, setCurrentPage] = useState(0);
+
   const capabilities = [
     {
       title: "Proposal & Pursuit Management",
@@ -81,6 +83,22 @@ const WhatIDo: React.FC<WhatIDoProps> = ({ id }) => {
     }
   ];
 
+  const cardsPerPage = 4;
+  const totalPages = Math.ceil(capabilities.length / cardsPerPage);
+
+  const nextPage = () => {
+    setCurrentPage((prev) => (prev + 1) % totalPages);
+  };
+
+  const prevPage = () => {
+    setCurrentPage((prev) => (prev - 1 + totalPages) % totalPages);
+  };
+
+  const visibleCapabilities = capabilities.slice(
+    currentPage * cardsPerPage,
+    currentPage * cardsPerPage + cardsPerPage
+  );
+
   return (
     <section id={id} className="relative py-32 px-8 sm:px-12 lg:px-24 bg-surface-dark/30">
       <div className="max-w-[1200px] mx-auto">
@@ -92,31 +110,74 @@ const WhatIDo: React.FC<WhatIDoProps> = ({ id }) => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
-          {capabilities.map((cap, i) => (
-            <div 
-              key={i} 
-              className="group p-10 rounded-2xl bg-surface-dark border border-white/5 hover:border-primary/20 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_50px_-15px_rgba(0,0,0,0.5)]"
-            >
-              <div className="flex items-center gap-6 mb-8">
-                <div className="size-16 rounded-xl bg-background-dark flex items-center justify-center border border-white/5 group-hover:border-primary/30 group-hover:bg-primary/5 transition-all">
-                  <span className="material-symbols-outlined text-primary text-3xl">{cap.icon}</span>
+        <div className="relative">
+          {/* Left Arrow */}
+          <button
+            onClick={prevPage}
+            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 lg:-translate-x-16 z-10 size-12 rounded-full bg-surface-dark border border-white/10 hover:border-primary/50 hover:bg-primary/10 flex items-center justify-center text-white/60 hover:text-primary transition-all duration-300 shadow-lg"
+            aria-label="Previous services"
+          >
+            <span className="material-symbols-outlined text-2xl">chevron_left</span>
+          </button>
+
+          {/* Cards Grid */}
+          <div className="grid md:grid-cols-2 gap-8 transition-all duration-500">
+            {visibleCapabilities.map((cap, i) => (
+              <div
+                key={`${currentPage}-${i}`}
+                className="group p-10 rounded-2xl bg-surface-dark border border-white/5 hover:border-primary/20 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_50px_-15px_rgba(0,0,0,0.5)] animate-slide-up"
+                style={{ animationDelay: `${i * 100}ms` }}
+              >
+                <div className="flex items-center gap-6 mb-8">
+                  <div className="size-16 rounded-xl bg-background-dark flex items-center justify-center border border-white/5 group-hover:border-primary/30 group-hover:bg-primary/5 transition-all">
+                    <span className="material-symbols-outlined text-primary text-3xl">{cap.icon}</span>
+                  </div>
+                  <h3 className="text-white text-2xl font-light tracking-tight group-hover:text-primary transition-colors">{cap.title}</h3>
                 </div>
-                <h3 className="text-white text-2xl font-light tracking-tight group-hover:text-primary transition-colors">{cap.title}</h3>
+                <p className="text-neutral-text font-light leading-relaxed mb-8">
+                  {cap.description}
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {cap.tags.map((tag, j) => (
+                    <span key={j} className="text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full bg-white/5 text-white/60 border border-white/5">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
               </div>
-              <p className="text-neutral-text font-light leading-relaxed mb-8">
-                {cap.description}
-              </p>
-              <div className="flex flex-wrap gap-2">
-                {cap.tags.map((tag, j) => (
-                  <span key={j} className="text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full bg-white/5 text-white/60 border border-white/5">
-                    {tag}
-                  </span>
-                ))}
-              </div>
-            </div>
+            ))}
+          </div>
+
+          {/* Right Arrow */}
+          <button
+            onClick={nextPage}
+            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 lg:translate-x-16 z-10 size-12 rounded-full bg-surface-dark border border-white/10 hover:border-primary/50 hover:bg-primary/10 flex items-center justify-center text-white/60 hover:text-primary transition-all duration-300 shadow-lg"
+            aria-label="Next services"
+          >
+            <span className="material-symbols-outlined text-2xl">chevron_right</span>
+          </button>
+        </div>
+
+        {/* Page Indicators */}
+        <div className="flex justify-center items-center gap-3 mt-12">
+          {Array.from({ length: totalPages }).map((_, i) => (
+            <button
+              key={i}
+              onClick={() => setCurrentPage(i)}
+              className={`transition-all duration-300 rounded-full ${
+                currentPage === i
+                  ? 'w-8 h-2 bg-primary'
+                  : 'w-2 h-2 bg-white/20 hover:bg-white/40'
+              }`}
+              aria-label={`Go to page ${i + 1}`}
+            />
           ))}
         </div>
+
+        {/* Page Counter */}
+        <p className="text-center text-neutral-text/50 text-sm mt-4">
+          {currentPage + 1} of {totalPages}
+        </p>
       </div>
     </section>
   );

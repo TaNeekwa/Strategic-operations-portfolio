@@ -86,7 +86,7 @@ const Home: React.FC<HomeProps> = ({ id, onViewResume, onViewTools }) => {
           </div>
 
           {/* Contact Info */}
-          <div className="flex items-center justify-center gap-6 mt-6">
+          <div className="flex items-center justify-center gap-4 mt-6">
             <a href="tel:9194410915" className="flex items-center gap-2 text-neutral-text hover:text-primary transition-colors">
               <span className="material-symbols-outlined text-lg">phone</span>
               <span className="text-sm font-light">(919) 441-0915</span>
@@ -96,10 +96,18 @@ const Home: React.FC<HomeProps> = ({ id, onViewResume, onViewTools }) => {
               <span className="material-symbols-outlined text-lg">mail</span>
               <span className="text-sm font-light">naomidonley@outlook.com</span>
             </a>
-            <span className="text-white/20">|</span>
-            <a href="https://www.linkedin.com/in/taneekwadonley/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-neutral-text hover:text-primary transition-colors">
+          </div>
+
+          {/* LinkedIn Button */}
+          <div className="flex items-center justify-center mt-4">
+            <a
+              href="https://www.linkedin.com/in/taneekwadonley/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-5 py-2.5 rounded-full border border-white/10 hover:border-primary/50 bg-surface-dark hover:bg-primary/10 text-white hover:text-primary transition-all duration-300"
+            >
               <span className="material-symbols-outlined text-lg">person</span>
-              <span className="text-sm font-light">LinkedIn</span>
+              <span className="text-sm font-semibold uppercase tracking-wide">LinkedIn</span>
             </a>
           </div>
 
