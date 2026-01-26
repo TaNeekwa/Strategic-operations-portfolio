@@ -31,12 +31,25 @@ const App: React.FC = () => {
         setCurrentView('experience');
       } else if (hash === 'tools') {
         setCurrentView('tools');
+      } else if (hash === 'about-me') {
+        setCurrentView('about-me');
+      } else if (hash === '' || hash === 'home') {
+        setCurrentView('landing');
       }
     };
     handleHash();
     window.addEventListener('hashchange', handleHash);
     return () => window.removeEventListener('hashchange', handleHash);
   }, []);
+
+  // Update URL hash when view changes
+  useEffect(() => {
+    if (currentView === 'landing') {
+      window.history.pushState(null, '', window.location.pathname);
+    } else {
+      window.history.pushState(null, '', `#${currentView}`);
+    }
+  }, [currentView]);
 
   useEffect(() => {
     if (currentView !== 'landing') return;
