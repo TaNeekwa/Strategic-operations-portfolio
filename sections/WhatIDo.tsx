@@ -42,6 +42,42 @@ const WhatIDo: React.FC<WhatIDoProps> = ({ id }) => {
       icon: "groups",
       description: "Keeping moving parts aligned in deadline-driven environments. I support project timelines by managing details, tracking dependencies, and ensuring communication stays clear across teams.",
       tags: ["Timeline & milestone coordination", "Internal and external stakeholder management", "Vendor & partner coordination", "Detail-driven execution support"]
+    },
+    {
+      title: "Document Control & Data Management",
+      icon: "folder_open",
+      description: "Keeping information accurate, organized, and accessible. I manage document flow, version control, and database integrity so teams always have what they need—when they need it.",
+      tags: ["Document control & version tracking", "Database management & data flow", "SharePoint & file organization", "Data validation & reporting", "Records management & audit readiness"]
+    },
+    {
+      title: "Implementation & System Onboarding",
+      icon: "sync_alt",
+      description: "Managing the transition from signed contract to fully operational system. I coordinate data extraction, migration, and documentation to ensure clean handoffs, accurate imports, and on-time go-lives.",
+      tags: ["End-to-end implementation coordination", "Data extraction & migration", "System onboarding & client handoff", "Multi-platform proficiency", "Import-ready documentation", "Client database management"]
+    },
+    {
+      title: "Tools & Automation Development",
+      icon: "build",
+      description: "Building solutions that save time and reduce errors. I design and implement internal tools, templates, and automated workflows that enable teams to work faster and more accurately.",
+      tags: ["Excel automation & advanced formulas", "VBA & macro development", "Internal tool building", "Template creation & standardization", "Workflow automation", "Portal & dashboard development"]
+    },
+    {
+      title: "Vendor & Subcontractor Coordination",
+      icon: "handshake",
+      description: "Managing external relationships that support internal success. I coordinate vendor inputs, track quote status, and ensure external partners deliver what's needed on time.",
+      tags: ["Vendor communication & follow-up", "Quote tracking & organization", "Subcontractor prequalification support", "Procurement coordination", "External partner management"]
+    },
+    {
+      title: "Reporting & Data Analysis",
+      icon: "bar_chart",
+      description: "Turning data into clarity. I build reports, track KPIs, and surface insights that help teams understand performance, identify issues, and make informed decisions.",
+      tags: ["Report creation & formatting", "Data validation & cleanup", "KPI tracking & dashboards", "Excel-based analysis", "Data-driven decision support"]
+    },
+    {
+      title: "Compliance & Quality Assurance",
+      icon: "verified",
+      description: "Ensuring work meets standards before it goes out the door. I support compliance tracking, documentation audits, and quality reviews to protect accuracy and reduce risk.",
+      tags: ["Compliance tracking & documentation", "Audit readiness & record-keeping", "Quality control & review processes", "Regulatory alignment", "Risk identification & escalation"]
     }
   ];
 

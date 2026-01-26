@@ -96,11 +96,11 @@ const App: React.FC = () => {
         <footer className="relative py-12 px-8 border-t border-white/5 bg-background-dark/80 backdrop-blur-md">
           <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 text-neutral-text text-sm">
             <div className="flex items-center gap-2">
-              <span className="font-bold text-white tracking-tighter uppercase">TaNeekwa S. Donley</span>
+              <span className="font-bold text-white tracking-tighter uppercase">Naomi S. Donley</span>
               <span className="opacity-40">/</span>
               <span>Proposal & Client Operations</span>
             </div>
-            <p>© {new Date().getFullYear()} TaNeekwa S. Donley. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} Naomi S. Donley. All rights reserved.</p>
           </div>
         </footer>
       </main>

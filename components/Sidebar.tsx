@@ -20,7 +20,7 @@ const Sidebar: React.FC<SidebarProps> = ({ activeSection }) => {
     <>
       <aside className="fixed left-0 top-0 bottom-0 w-20 z-50 glass-sidebar flex flex-col items-center justify-between py-10 hidden md:flex">
         <div className="group flex items-center justify-center size-10 rounded-lg border border-white/10 text-primary hover:bg-white/5 transition-all cursor-pointer">
-          <span className="font-bold text-xl tracking-tighter group-hover:scale-110 transition-transform uppercase">TD</span>
+          <span className="font-bold text-xl tracking-tighter group-hover:scale-110 transition-transform uppercase">ND</span>
         </div>
 
         <nav className="flex flex-col gap-10 items-center">
@@ -53,7 +53,7 @@ const Sidebar: React.FC<SidebarProps> = ({ activeSection }) => {
 
       {/* Mobile Header */}
       <header className="md:hidden fixed top-0 w-full z-50 bg-background-dark/90 backdrop-blur border-b border-white/5 px-6 py-4 flex justify-between items-center">
-        <span className="font-bold text-lg text-primary tracking-tighter uppercase">TaNeekwa Donley</span>
+        <span className="font-bold text-lg text-primary tracking-tighter uppercase">Naomi Donley</span>
         <button className="text-white"><span className="material-symbols-outlined">menu</span></button>
       </header>
     </>

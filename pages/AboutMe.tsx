@@ -139,7 +139,9 @@ const AboutMe: React.FC<AboutMeProps> = ({ onBack }) => {
                      "Proposal Coordination & Management",
                      "Client Services & Account Coordination",
                      "Sales Operations & Support",
-                     "Implementation & Onboarding Coordination"
+                     "Implementation & Onboarding Coordination",
+                     "Database & Document Management",
+                     "Process Automation & Tooling"
                    ].map((item, i) => (
                      <div key={i} className="px-6 py-4 rounded-xl border border-white/10 bg-background-dark/60 text-white text-sm font-light hover:border-primary/40 hover:text-primary transition-all cursor-default">
                        {item}

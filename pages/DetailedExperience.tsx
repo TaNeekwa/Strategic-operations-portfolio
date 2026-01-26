@@ -23,9 +23,10 @@ const DetailedExperience: React.FC<DetailedExperienceProps> = ({ onBack }) => {
         'Coordinate multi-team inputs to ensure proposals are technically accurate and commercially sound.',
         'Refine content for clarity, accuracy, and alignment with complex customer requirements.',
         'Analyze bid request documents (RFPs, RFQs, and RFIs) to extract critical decision-making insights.',
+        'Manage document control and version tracking using SharePoint.',
         'Manage sensitive operational and customer-facing data with high integrity and accountability.'
       ],
-      tools: ['Excel (Advanced)', 'Salesforce', 'PowerPoint', 'SharePoint'],
+      tools: ['Excel (Advanced)', 'Salesforce', 'PowerPoint', 'SharePoint', 'Document Control'],
       references: [
         {
           name: 'Antonio Wade',
@@ -100,24 +101,26 @@ const DetailedExperience: React.FC<DetailedExperienceProps> = ({ onBack }) => {
       company: 'Viventium',
       url: 'https://viventium.com',
       logo: 'V',
-      role: 'Sales Coordinator',
+      role: 'Sales & Implementation Coordinator',
       period: 'August 2023 — February 2024',
-      summary: 'Spearheading seamless onboarding onto the payroll platform from contract signature through lifecycle.',
-      overview: 'Pivotal role as primary contact during client transition to the Viventium payroll platform. Ensured strict compliance with business tax documentation and local registrations.',
+      summary: 'Led end-to-end client onboarding and implementation onto the Viventium payroll platform.',
+      overview: 'Led end-to-end client onboarding and implementation onto the Viventium payroll platform—managing data extraction, migration, and documentation from contract signature through system handoff.',
       stakeholders: 'Sales Representatives, Payroll Implementation Specialists, IT',
       responsibilities: [
         'Manage all contracts and proposals using CRM systems (Salesforce/Asana).',
+        'Own data extraction and migration from multiple payroll platforms (Gusto, Heartland, Paylocity).',
+        'Organize and validate large volumes of payroll data and Excel-based reports for clean system import.',
         'Coordinate payroll extraction and secure essential tax documentation.',
         'Conduct weekly team meetings to address account status and missing documentation.',
         'Simultaneously manage multiple onboarding projects to meet revenue deadlines.'
       ],
-      tools: ['Salesforce', 'Asana', 'Database Systems'],
+      tools: ['Salesforce', 'Asana', 'Excel (Advanced)', 'Gusto', 'Heartland', 'Paylocity'],
       projects: [
         {
           name: 'Data Transformation Suite',
-          problem: 'Client payroll data arrived in inconsistent formats, delaying system migration.',
-          solution: 'Built data transformation tools to sanitize and format legacy payroll information.',
-          impact: 'Resulted in increased revenue realization through faster client satisfaction and onboarding.'
+          problem: 'Client payroll data arrived in inconsistent formats from various platforms, delaying system migration.',
+          solution: 'Rapidly learned multiple external payroll systems and built data transformation tools to sanitize and format legacy payroll information for clean import.',
+          impact: 'Resulted in increased revenue realization through faster client satisfaction and onboarding. Demonstrated ability to quickly master unfamiliar platforms.'
         }
       ]
     },
