@@ -51,6 +51,22 @@ const App: React.FC = () => {
     }
   }, [currentView]);
 
+  // Track page views in GA4 whenever the view changes
+  useEffect(() => {
+    const pagePath = currentView === 'landing' ? '/' : `/${currentView}`;
+    const pageTitle = {
+      landing: 'Home',
+      'about-me': 'About Me',
+      experience: 'Detailed Experience',
+      tools: 'Tools & Automations',
+      'cover-letter': 'Cover Letter',
+    }[currentView];
+    (window as any).gtag?.('event', 'page_view', {
+      page_path: pagePath,
+      page_title: pageTitle,
+    });
+  }, [currentView]);
+
   useEffect(() => {
     if (currentView !== 'landing') return;
 
