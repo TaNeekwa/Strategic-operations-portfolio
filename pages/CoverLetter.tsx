@@ -93,12 +93,12 @@ const CoverLetter: React.FC<CoverLetterProps> = ({ onBack }) => {
             {/* Letter Header */}
             <div className="flex items-start justify-between mb-8 pb-8 border-b border-white/5">
               <div className="space-y-1">
-                <h2 className="text-white text-2xl font-light">Naomi S. Donley</h2>
+                <h2 className="text-white text-2xl font-light">Naomi F. Donley</h2>
                 <p className="text-neutral-text text-sm">Durham, NC</p>
                 <div className="flex items-center gap-4 pt-2">
-                  <a href="mailto:taneekwa@outlook.com" className="text-primary text-sm hover:underline">taneekwa@outlook.com</a>
+                  <a href="mailto:naomidonley@outlook.com" className="text-primary text-sm hover:underline">naomidonley@outlook.com</a>
                   <span className="text-white/20">|</span>
-                  <a href="tel:9194410915" className="text-primary text-sm hover:underline">(919) 441-0915</a>
+                  <a href="tel:9849203662" className="text-primary text-sm hover:underline">(984) 920-3662</a>
                 </div>
               </div>
               <div className="text-right">
@@ -198,7 +198,7 @@ const CoverLetter: React.FC<CoverLetterProps> = ({ onBack }) => {
                 Download Resume
               </a>
               <a
-                href="mailto:taneekwa@outlook.com?subject=Interview%20Request%20-%20Proposal%20Resource%20Planner"
+                href="mailto:naomidonley@outlook.com?subject=Interview%20Request%20-%20Proposal%20Resource%20Planner"
                 className="flex items-center gap-2 px-6 py-3 rounded-full border border-white/10 text-white font-bold text-sm uppercase tracking-wider hover:border-primary hover:text-primary transition-colors"
               >
                 <span className="material-symbols-outlined text-[18px]">mail</span>

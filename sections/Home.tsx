@@ -22,7 +22,7 @@ const Home: React.FC<HomeProps> = ({ id, onViewResume, onViewTools }) => {
 
           <div className="space-y-6">
             <h1 className="text-white text-5xl sm:text-6xl lg:text-7xl font-extralight leading-[1.1] tracking-tight">
-              Naomi S. <br />
+              Naomi F. <br />
               <span className="font-semibold text-transparent bg-clip-text bg-gradient-to-r from-primary to-white">Donley</span>
             </h1>
             <p className="text-neutral-text text-lg sm:text-xl font-light leading-relaxed max-w-xl">
@@ -38,7 +38,7 @@ const Home: React.FC<HomeProps> = ({ id, onViewResume, onViewTools }) => {
               <span className="text-sm font-bold tracking-wide uppercase mr-2">View Resume</span>
               <span className="material-symbols-outlined text-[18px] group-hover:translate-y-1 transition-transform">description</span>
             </button>
-            <a href="mailto:taneekwa@outlook.com" className="group flex items-center justify-center h-14 px-10 rounded-full border border-white/10 hover:border-primary/50 bg-transparent hover:bg-surface-dark text-white hover:text-primary transition-all duration-300">
+            <a href="mailto:naomidonley@outlook.com" className="group flex items-center justify-center h-14 px-10 rounded-full border border-white/10 hover:border-primary/50 bg-transparent hover:bg-surface-dark text-white hover:text-primary transition-all duration-300">
               <span className="material-symbols-outlined mr-2 text-[20px] text-primary/80 group-hover:text-primary transition-colors">mail</span>
               <span className="text-sm font-semibold tracking-wide uppercase">Get In Touch</span>
             </a>
@@ -75,7 +75,7 @@ const Home: React.FC<HomeProps> = ({ id, onViewResume, onViewTools }) => {
             <img
               src="/portrait.jpg"
               className="absolute inset-0 w-full h-full object-cover transition-all duration-1000 group-hover:scale-105"
-              alt="Naomi S. Donley Professional Portrait"
+              alt="Naomi F. Donley Professional Portrait"
             />
             
             <div className="absolute bottom-8 left-8 right-8 p-6 rounded-2xl bg-background-dark/40 backdrop-blur-md border border-white/5 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
@@ -87,9 +87,9 @@ const Home: React.FC<HomeProps> = ({ id, onViewResume, onViewTools }) => {
 
           {/* Contact Info */}
           <div className="flex items-center justify-center gap-4 mt-6">
-            <a href="tel:9194410915" className="flex items-center gap-2 text-neutral-text hover:text-primary transition-colors">
+            <a href="tel:9849203662" className="flex items-center gap-2 text-neutral-text hover:text-primary transition-colors">
               <span className="material-symbols-outlined text-lg">phone</span>
-              <span className="text-sm font-light">(919) 441-0915</span>
+              <span className="text-sm font-light">(984) 920-3662</span>
             </a>
             <span className="text-white/20">|</span>
             <a href="mailto:naomidonley@outlook.com" className="flex items-center gap-2 text-neutral-text hover:text-primary transition-colors">

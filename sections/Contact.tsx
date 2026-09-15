@@ -20,13 +20,13 @@ const Contact: React.FC<ContactProps> = ({ id }) => {
             </div>
 
             <div className="space-y-8 pt-6">
-              <a href="mailto:taneekwa@outlook.com" className="flex items-center gap-6 group cursor-pointer">
+              <a href="mailto:naomidonley@outlook.com" className="flex items-center gap-6 group cursor-pointer">
                 <div className="size-12 rounded-full border border-white/5 flex items-center justify-center group-hover:bg-primary group-hover:text-background-dark transition-all duration-300">
                   <span className="material-symbols-outlined text-xl">mail</span>
                 </div>
                 <div>
                   <p className="text-white/40 text-[10px] font-bold uppercase tracking-widest">Direct Email</p>
-                  <p className="text-white font-light group-hover:text-primary transition-colors">taneekwa@outlook.com</p>
+                  <p className="text-white font-light group-hover:text-primary transition-colors">naomidonley@outlook.com</p>
                 </div>
               </a>
 
