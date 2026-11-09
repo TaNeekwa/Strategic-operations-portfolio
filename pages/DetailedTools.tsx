@@ -26,7 +26,7 @@ const DetailedTools: React.FC<DetailedToolsProps> = ({ onBack }) => {
         "Provides a shared approach to project visibility",
         "Includes training for other project managers"
     ],
-    "result": "Leadership-approved pilot for three project managers. Broader rollout and measured time savings are not yet claimed.",
+    "result": "Leadership-approved pilot for three project managers, supported by PM training and a structured approach to customer communication.",
     "tools": [
         "Client Portal Design",
         "Project Visibility",
