@@ -1,5 +1,6 @@
 
 import React, { useState } from 'react';
+import Recommendations from '../components/Recommendations';
 
 interface DetailedToolsProps {
   onBack: () => void;
@@ -11,6 +12,72 @@ const DetailedTools: React.FC<DetailedToolsProps> = ({ onBack }) => {
   const [lightboxOpen, setLightboxOpen] = useState(false);
 
   const projects = [
+{
+    "company": "EPEC Solutions Inc.",
+    "testimonial": null,
+    "name": "EPEC Client Portal",
+    "toolType": "Customer Visibility · Leadership-Approved Pilot",
+    "context": "Managing electrical equipment projects means keeping customers and project managers aligned on drawings, submittals, production, inspections, and delivery.",
+    "approach": "I designed a client portal around the project information customers and PMs need to follow. I worked with leadership on a pilot and train other project managers on how to use it.",
+    "building": "An EPEC client portal designed to support customer communication and project visibility, with a leadership-approved pilot for three project managers.",
+    "impacts": [
+        "Leadership approved a three-PM pilot",
+        "Supports customer communication throughout delivery",
+        "Provides a shared approach to project visibility",
+        "Includes training for other project managers"
+    ],
+    "result": "Leadership-approved pilot for three project managers. Broader rollout and measured time savings are not yet claimed.",
+    "tools": [
+        "Client Portal Design",
+        "Project Visibility",
+        "Customer Communication",
+        "PM Training"
+    ]
+},
+{
+    "company": "EPEC Solutions Inc.",
+    "testimonial": null,
+    "name": "Job Communication & Submittal Tracker",
+    "toolType": "Project Tracking & Document Control",
+    "context": "Customer projects involve a steady flow of emails, calls, meetings, drawings, and revisions. A clear dated record helps keep decisions and approvals traceable.",
+    "approach": "I built a job tracker to keep project communication and submittal activity organized for each assigned job, recording what was sent, received, and forwarded.",
+    "building": "A maintained project tracker and submittal log covering communications, revisions, dates, comments, and follow-up across assigned equipment projects.",
+    "impacts": [
+        "Keeps dated communication records by job",
+        "Tracks drawing and submittal revision history",
+        "Makes approval follow-up easier to organize",
+        "Supports consistent customer updates and handoffs"
+    ],
+    "result": "A working record of project communication and submittals that supports clear follow-through.",
+    "tools": [
+        "Project Tracking",
+        "Submittal Logs",
+        "Revision Control",
+        "Communication Records"
+    ]
+},
+{
+    "company": "EPEC Solutions Inc.",
+    "testimonial": null,
+    "name": "Customer Onboarding & Project Documentation",
+    "toolType": "Process Design & Standardization",
+    "context": "Customers and project teams need consistent information at the start of a project and a clear record through delivery and closeout.",
+    "approach": "I wrote onboarding materials and contributed procedures to the EPEC-PROC library, translating recurring project needs into reusable guidance.",
+    "building": "A customer welcome email, handbook blueprint, and rack-on-rack project intake sheet, alongside procedures and project documentation that support consistent execution.",
+    "impacts": [
+        "Standardizes customer welcome and intake materials",
+        "Clarifies information needed for RoR projects",
+        "Documents repeatable project procedures",
+        "Supports organized records and team handoffs"
+    ],
+    "result": "Reusable onboarding materials and documented processes that support project delivery.",
+    "tools": [
+        "Customer Onboarding",
+        "Intake Templates",
+        "SOP Development",
+        "Project Documentation"
+    ]
+},
     {
       name: "Automated EMS Proposal Tool",
       company: "FlexGen",
@@ -140,9 +207,9 @@ const DetailedTools: React.FC<DetailedToolsProps> = ({ onBack }) => {
 
   const skillCategories = [
     {
-      title: "Proposal & Operations",
+      title: "Project & Field Operations",
       icon: "description",
-      items: ["Excel (Advanced)", "Salesforce", "Asana", "SharePoint", "PowerPoint", "RFI/RFP Analysis", "Narrative Development"]
+      items: ["Project Scheduling", "Procore Submittals", "Procurement Tracking", "Inspection Documentation", "Photos & Punch Lists", "Closeout Records", "Excel (Advanced)"]
     },
     {
       title: "Automation & Development",
@@ -150,9 +217,9 @@ const DetailedTools: React.FC<DetailedToolsProps> = ({ onBack }) => {
       items: ["VBA/Macros", "Web Applications", "Document Generation", "Workflow Automation", "Data Transformation", "API Integration"]
     },
     {
-      title: "Client & Sales Coordination",
+      title: "Client & Commercial Coordination",
       icon: "groups",
-      items: ["Client Onboarding", "CRM Management", "Pipeline Tracking", "SLA Management", "Compliance Auditing", "Stakeholder Communication"]
+      items: ["Client Onboarding", "Vendor Coordination", "Contracts & Change Orders", "RFI/RFP Analysis", "Salesforce", "SharePoint", "Stakeholder Communication"]
     }
   ];
 
@@ -162,7 +229,7 @@ const DetailedTools: React.FC<DetailedToolsProps> = ({ onBack }) => {
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16 animate-slide-up">
           <div className="space-y-4">
-            <span className="text-primary font-bold text-xs uppercase tracking-widest">Technological Leverage</span>
+            <span className="text-primary font-bold text-xs uppercase tracking-widest">Practical Systems & Process Improvement</span>
             <h1 className="text-white text-5xl font-extralight tracking-tight">Tools & <span className="font-semibold">Automations</span></h1>
           </div>
           <button onClick={onBack} className="text-neutral-text hover:text-white flex items-center gap-2 transition-colors border-b border-transparent hover:border-white/20 pb-1">
@@ -181,7 +248,7 @@ const DetailedTools: React.FC<DetailedToolsProps> = ({ onBack }) => {
                 <span className="text-primary font-bold text-[10px] uppercase tracking-[0.3em]">Innovation Philosophy</span>
               </div>
               <p className="text-white text-2xl md:text-3xl font-extralight leading-relaxed italic">
-                "I believe that as tools, systems, and AI continue to evolve, it's important for operations and proposal teams to lean into them thoughtfully — not to replace people, but to support better decision-making, reduce manual risk, and improve consistency."
+                "I build tools around the way people actually work. Whether I’m coordinating a project, documenting field activity, or simplifying a repetitive task, my goal is to give teams clearer information, fewer manual steps, and a dependable way to follow through."
               </p>
               <p className="text-neutral-text text-lg font-light leading-relaxed">
                 I'm naturally tech-savvy and comfortable learning new systems, and I use modern tools and automation as a way to strengthen processes, protect accuracy, and enable teams to work more efficiently.
@@ -349,7 +416,7 @@ const DetailedTools: React.FC<DetailedToolsProps> = ({ onBack }) => {
                 </div>
 
                 {/* Testimonial */}
-                <div className="mt-8 pt-8 border-t border-white/5">
+                {projects[activeProject].testimonial && <div className="mt-8 pt-8 border-t border-white/5">
                   <div className="relative p-8 rounded-2xl bg-background-dark/50 border border-white/5">
                     <span className="absolute -top-4 left-8 text-6xl text-primary/20 font-serif">"</span>
                     <div className="flex flex-col lg:flex-row lg:items-center gap-8">
@@ -380,7 +447,7 @@ const DetailedTools: React.FC<DetailedToolsProps> = ({ onBack }) => {
                       </div>
                     </div>
                   </div>
-                </div>
+                </div>}
               </div>
             </div>
           </div>
@@ -438,7 +505,7 @@ const DetailedTools: React.FC<DetailedToolsProps> = ({ onBack }) => {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            {projects.filter(p => p.testimonial.linkedin).map((project, i) => (
+            {projects.filter(p => p.testimonial?.linkedin).map((project, i) => (
               <div key={i} className="p-8 rounded-2xl bg-surface-dark border border-white/5 hover:border-primary/20 transition-all duration-300">
                 <div className="space-y-4">
                   <span className="text-4xl text-primary/30 font-serif">"</span>
@@ -472,6 +539,7 @@ const DetailedTools: React.FC<DetailedToolsProps> = ({ onBack }) => {
             ))}
           </div>
         </section>
+        <Recommendations />
       </div>
 
       {/* Lightbox Modal */}

@@ -8,6 +8,25 @@ interface DetailedExperienceProps {
 const DetailedExperience: React.FC<DetailedExperienceProps> = ({ onBack }) => {
   const [expandedRole, setExpandedRole] = useState<string | null>('epec');
 
+  const roleImpact: Record<string, { title: string; text: string }> = {
+    "epec": {
+        "title": "Project & Field Delivery",
+        "text": "I connect customers, engineers, manufacturers, and site teams from purchase order through inspections, testing, delivery, and closeout\u2014keeping schedules, equipment quality, and open items in view."
+    },
+    "flexgen": {
+        "title": "Proposal & Commercial Execution",
+        "text": "I bring technical scope, vendor inputs, and pricing into a coordinated proposal process, then build automation that reduces repetitive work and helps teams deliver accurate customer-ready proposals."
+    },
+    "spectraforce": {
+        "title": "Client Onboarding & Compliance",
+        "text": "I keep client accounts, contractors, recruiters, and onboarding teams aligned through time-sensitive requirements, organized records, and proactive follow-up."
+    },
+    "viventium": {
+        "title": "Implementation & Data Readiness",
+        "text": "I connect contract handoff with client implementation by organizing documentation, validating payroll data, and coordinating the details teams need for a smooth transition."
+    }
+};
+
   const experiences = [
 {
     "id": "epec",
@@ -372,9 +391,9 @@ const DetailedExperience: React.FC<DetailedExperienceProps> = ({ onBack }) => {
                     </div>
 
                     <div className="p-6 rounded-xl border border-primary/20 bg-primary/5">
-                      <h4 className="text-primary text-[10px] font-bold uppercase tracking-widest mb-2">Ops Enabler</h4>
+                      <h4 className="text-primary text-[10px] font-bold uppercase tracking-widest mb-2">{roleImpact[exp.id].title}</h4>
                       <p className="text-white text-xs font-light leading-relaxed">
-                        I help enable companies by <span className="text-primary font-normal">building systems and tools</span> that remove bottlenecks, improve accuracy, and accelerate the path from proposal to revenue.
+                        {roleImpact[exp.id].text}
                       </p>
                     </div>
                   </aside>
