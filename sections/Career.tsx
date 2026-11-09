@@ -7,10 +7,16 @@ interface CareerProps {
 
 const Career: React.FC<CareerProps> = ({ id }) => {
   const journey = [
+{
+    "role": "Project Manager",
+    "company": "EPEC Solutions Inc.",
+    "period": "Current Role",
+    "description": "Managing electrical equipment projects from purchase order through factory inspections, testing, site delivery, setup, and closeout. Coordinating customers, engineering, manufacturing, procurement, and project documentation."
+},
     {
       role: "Proposal Coordinator (Contract)",
       company: "FlexGen",
-      period: "2025 — Present",
+      period: "2025",
       description: "Orchestrating end-to-end proposal lifecycles for EMS and Full-Product offerings. Automated proposal generation, reducing turnaround time by over 90%."
     },
     {

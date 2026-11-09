@@ -17,7 +17,7 @@ const Home: React.FC<HomeProps> = ({ id, onViewResume, onViewTools }) => {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-50"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
             </span>
-            <span className="text-[11px] font-bold tracking-widest text-primary uppercase">Active in High-Impact Proposals</span>
+            <span className="text-[11px] font-bold tracking-widest text-primary uppercase">Open to Nationwide Travel & Relocation</span>
           </div>
 
           <div className="space-y-6">
@@ -25,8 +25,9 @@ const Home: React.FC<HomeProps> = ({ id, onViewResume, onViewTools }) => {
               Naomi F. <br />
               <span className="font-semibold text-transparent bg-clip-text bg-gradient-to-r from-primary to-white">Donley</span>
             </h1>
+            <p className="text-primary text-xs sm:text-sm font-bold uppercase tracking-widest">Project Management | Field Operations | Process Improvement</p>
             <p className="text-neutral-text text-lg sm:text-xl font-light leading-relaxed max-w-xl">
-              I support business operations and cross-functional teams by managing proposals, documents, data, and workflows—ensuring every handoff is clear, accurate, and executable. My background spans proposal coordination, document control, database management, pricing alignment, and process automation, allowing me to step in wherever structure and follow-through are needed most.
+              I manage electrical equipment projects from purchase order through production, factory inspections, site delivery, setup, and closeout. I connect customers, engineers, manufacturers, and field teams to keep schedules, materials, documentation, and quality aligned—and build tools that make the work easier to manage.
             </p>
           </div>
 
@@ -61,8 +62,8 @@ const Home: React.FC<HomeProps> = ({ id, onViewResume, onViewTools }) => {
               <span className="text-xs uppercase tracking-widest text-neutral-text font-bold">Excel & CRM Expert</span>
             </div>
             <div className="flex flex-col">
-              <span className="text-3xl font-light text-white">BBA</span>
-              <span className="text-xs uppercase tracking-widest text-neutral-text font-bold">Business Admin</span>
+              <span className="text-3xl font-light text-white">Factory + Field</span>
+              <span className="text-xs uppercase tracking-widest text-neutral-text font-bold">Inspections & Testing</span>
             </div>
           </div>
         </div>
@@ -80,7 +81,7 @@ const Home: React.FC<HomeProps> = ({ id, onViewResume, onViewTools }) => {
             
             <div className="absolute bottom-8 left-8 right-8 p-6 rounded-2xl bg-background-dark/40 backdrop-blur-md border border-white/5 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
                <p className="text-white text-sm font-light italic leading-relaxed">
-                 "I enable growth by ensuring that every proposal commitment is operationally achievable and commercially sound."
+                 "I keep projects moving from approved drawings to tested equipment and a documented handoff."
                </p>
             </div>
           </div>

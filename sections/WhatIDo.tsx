@@ -9,6 +9,28 @@ const WhatIDo: React.FC<WhatIDoProps> = ({ id }) => {
   const [currentPage, setCurrentPage] = useState(0);
 
   const capabilities = [
+{
+    "title": "Electrical Equipment Project Delivery",
+    "icon": "electrical_services",
+    "description": "Managing projects from purchase order through drawings, procurement, production, delivery, site setup, and closeout. I align customer requirements with engineering and manufacturing execution.",
+    "tags": [
+        "Project schedules",
+        "Switchboards & panelboards",
+        "Materials & procurement",
+        "Change orders"
+    ]
+},
+{
+    "title": "Factory & Field Coordination",
+    "icon": "fact_check",
+    "description": "Visiting factories and customer sites to inspect equipment, witness testing, assess shipping damage, and coordinate setup and corrective work. I keep findings documented and open items moving toward resolution.",
+    "tags": [
+        "Factory inspections",
+        "Equipment testing",
+        "Photos & punch lists",
+        "Site delivery & setup"
+    ]
+},
     {
       title: "Proposal & Pursuit Management",
       icon: "task_alt",
@@ -104,9 +126,9 @@ const WhatIDo: React.FC<WhatIDoProps> = ({ id }) => {
       <div className="max-w-[1200px] mx-auto">
         <div className="text-center space-y-4 mb-20">
           <span className="text-primary font-bold text-xs uppercase tracking-widest">Core Capabilities</span>
-          <h2 className="text-white text-4xl sm:text-5xl font-extralight tracking-tight">Strategic Service Offerings</h2>
+          <h2 className="text-white text-4xl sm:text-5xl font-extralight tracking-tight">Project & Operations Capabilities</h2>
           <p className="text-neutral-text max-w-2xl mx-auto font-light">
-            I don't just manage tasks; I elevate the entire operational engine to support sustainable client acquisition and retention.
+            Connecting customers, engineering, manufacturing, and field teams from the first requirement to final delivery.
           </p>
         </div>
 

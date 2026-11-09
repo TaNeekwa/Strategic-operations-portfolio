@@ -15,7 +15,7 @@ const Contact: React.FC<ContactProps> = ({ id }) => {
               <span className="text-primary font-bold text-xs uppercase tracking-widest">Engagement</span>
               <h2 className="text-white text-5xl font-extralight tracking-tight leading-tight">Ready to <br/><span className="font-semibold">Align Success?</span></h2>
               <p className="text-neutral-text font-light leading-relaxed max-w-md">
-                Whether you're looking for an operations lead or a proposal mastermind, let's discuss how I can support your growth.
+                Let’s discuss project management, field coordination, or operations opportunities in electrical infrastructure and data center construction. Based in Durham, North Carolina; open to nationwide travel and relocation.
               </p>
             </div>
 
@@ -59,6 +59,7 @@ const Contact: React.FC<ContactProps> = ({ id }) => {
               <div className="space-y-2">
                 <label className="text-[10px] font-bold uppercase tracking-widest text-neutral-text ml-1">Inquiry Type</label>
                 <select className="w-full bg-background-dark/50 border border-white/5 rounded-lg h-12 px-4 text-white/50 focus:border-primary/50 focus:ring-0 transition-colors appearance-none">
+                  <option>Project Management & Field Operations</option>
                   <option>Proposal Management</option>
                   <option>Client Operations Lead</option>
                   <option>Process Consulting</option>

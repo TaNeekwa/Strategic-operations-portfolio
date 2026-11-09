@@ -31,7 +31,7 @@ const AboutMe: React.FC<AboutMeProps> = ({ onBack }) => {
             </div>
             <div className="space-y-6 text-neutral-text text-lg font-light leading-relaxed">
               <p>
-                I’m a client operations and proposal professional with a background rooted in customer-facing roles, account coordination, and implementation support — and a career that has steadily evolved into proposal coordination, pricing alignment, and operational execution.
+                I’m a Project Manager at EPEC Solutions with experience across electrical equipment delivery, field operations, proposals, contracts, and client implementation. I manage projects from purchase order through factory inspections, testing, site delivery, setup, and closeout.
               </p>
               <p>
                 I began my career working directly with customers: managing requests, resolving issues, coordinating services, and navigating complex conversations where clarity, accuracy, and trust mattered. Those early experiences shaped how I work today — with a strong sense of ownership, empathy, and accountability for outcomes, not just tasks.
@@ -72,7 +72,7 @@ const AboutMe: React.FC<AboutMeProps> = ({ onBack }) => {
               <div className="space-y-4">
                 <h2 className="text-white text-4xl font-extralight tracking-tight">Process, <span className="font-semibold text-primary">Not Just Paper.</span></h2>
                 <p className="text-neutral-text text-lg font-light leading-relaxed">
-                  While my primary focus is proposal coordination, implementation, and client operations, I’ve consistently supported process improvement initiatives to make these functions more efficient and reliable.
+                  Across project delivery, field coordination, proposals, and client operations, I build practical systems that make schedules, documentation, and handoffs easier to manage. At EPEC, this includes a project tracker, standardized onboarding materials, and a leadership-approved client portal pilot.
                 </p>
               </div>
               <ul className="space-y-4">

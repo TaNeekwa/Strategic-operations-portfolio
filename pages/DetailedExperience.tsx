@@ -6,16 +6,65 @@ interface DetailedExperienceProps {
 }
 
 const DetailedExperience: React.FC<DetailedExperienceProps> = ({ onBack }) => {
-  const [expandedRole, setExpandedRole] = useState<string | null>(null);
+  const [expandedRole, setExpandedRole] = useState<string | null>('epec');
 
   const experiences = [
+{
+    "id": "epec",
+    "company": "EPEC Solutions Inc.",
+    "url": "",
+    "logo": "EP",
+    "role": "Project Manager",
+    "period": "Current Role",
+    "summary": "Electrical equipment project delivery, factory inspections, and field operations.",
+    "overview": "Own customer projects from purchase order through delivery, site setup, and closeout for switchboards, panelboards, rack-on-rack solar skids, and PLC/HMI control systems. Serve as the customer’s primary contact while aligning engineering, manufacturing, materials, schedules, quality, and commercial requirements.",
+    "stakeholders": "Customers, Engineers of Record, Sales, Engineering, Manufacturing Partners, Operations, Accounting",
+    "responsibilities": [
+        "Lead project kickoff meetings, customer coordination calls, and design reviews; track decisions, risks, and action items.",
+        "Review single-line diagrams, layouts, wiring drawings, and specifications; consolidate comments and manage submittals and revisions, including customer Procore portals.",
+        "Confirm bills of material, part numbers, and quantities against approved drawings; track purchase orders, deposits, and long-lead equipment.",
+        "Maintain production schedules, inspection windows, ship dates, and delivery plans; escalate delays and coordinate recovery options.",
+        "Visit factories for progress and in-process inspections; witness and verify equipment testing before shipment.",
+        "Document inspection results using time-stamped photographs, punch lists, and sign-offs; follow up on open items before shipping.",
+        "Coordinate carriers and site delivery windows; inspect incoming equipment for damage and completeness and oversee setup with customer teams.",
+        "Perform or witness onsite inspections and testing; coordinate corrective work, replacement parts, and field issue resolution.",
+        "Negotiate and document change orders, storage arrangements, and customer-supplied equipment custody requirements.",
+        "Prepare compliance packages, record drawings, test reports, and closeout documentation; coordinate invoicing milestones.",
+        "Build project tracking tools and develop a client portal pilot approved for three project managers; train colleagues and standardize onboarding documentation."
+    ],
+    "tools": [
+        "Procore (Customer Submittals)",
+        "Excel",
+        "Electrical Drawings & SLDs",
+        "Submittal Logs",
+        "Project Schedules",
+        "Inspection Reports",
+        "Punch Lists",
+        "Client Portal"
+    ],
+    "references": [],
+    "projects": [
+        {
+            "name": "EPEC Client Portal & Project Tracking",
+            "problem": "Customer updates, submittals, and project records need consistent visibility and follow-through.",
+            "solution": "Designed a client portal pilot and built a job tracker for project communications and submittals.",
+            "impact": "Leadership approved a pilot for three project managers; supports organized records and PM training."
+        },
+        {
+            "name": "Factory-to-Site Equipment Delivery",
+            "problem": "Equipment quality, shipping readiness, and site issues must be coordinated across customers and manufacturers.",
+            "solution": "Coordinate inspections, witnessed testing, delivery checks, setup, and corrective work.",
+            "impact": "Maintains a documented record of readiness, deficiencies, and closeout actions across the equipment lifecycle."
+        }
+    ]
+},
     {
       id: 'flexgen',
       company: 'FlexGen',
       url: 'https://flexgen.com',
       logo: 'FG',
       role: 'Proposal Coordinator/Automations Specialist (Contract)',
-      period: 'March 2025 — Present',
+      period: 'March 2025',
       summary: 'Owning the end-to-end proposal lifecycle for Energy Management Systems (EMS) and Full-Product offerings.',
       overview: 'Own and coordinate the end-to-end proposal lifecycle for Energy Management System (EMS) and Full-Product offerings, supporting pricing validation, scope alignment, and timely delivery of client-ready proposals. Serve as the central point of contact between BD, Engineering, Operations, and vendors—coordinating inputs, aligning scope, and ensuring proposals are technically accurate, commercially sound, and operationally executable.',
       stakeholders: 'Business Development, Engineering, Operations, Vendors, Leadership',
@@ -233,9 +282,9 @@ const DetailedExperience: React.FC<DetailedExperienceProps> = ({ onBack }) => {
                     <section className="space-y-4">
                       <div className="flex justify-between items-center">
                         <h4 className="text-white/40 text-[10px] font-bold uppercase tracking-[0.2em]">Role Overview</h4>
-                        <a href={exp.url} target="_blank" rel="noopener noreferrer" className="text-primary text-[10px] font-bold uppercase tracking-widest flex items-center gap-1 hover:underline">
+                        {exp.url && <a href={exp.url} target="_blank" rel="noopener noreferrer" className="text-primary text-[10px] font-bold uppercase tracking-widest flex items-center gap-1 hover:underline">
                           Official Website <span className="material-symbols-outlined text-sm">open_in_new</span>
-                        </a>
+                        </a>}
                       </div>
                       <p className="text-neutral-text font-light leading-relaxed">{exp.overview}</p>
                       <div className="flex flex-wrap items-center gap-2 text-xs">

@@ -9,6 +9,27 @@ const Projects: React.FC<ProjectsProps> = ({ id }) => {
   const [activeProject, setActiveProject] = useState(0);
 
   const projects = [
+{
+    "title": "EPEC Client Portal & Project Tracking",
+    "role": "Project Manager",
+    "toolType": "Project Visibility & Customer Coordination",
+    "image": "/epec-project-workflow.svg",
+    "challenge": "Electrical equipment projects require clear records of customer communication, drawing revisions, submittals, inspection windows, and deliveries across multiple teams.",
+    "innovation": "Designed the EPEC Client Portal and built a job tracker to organize project communications and submittals. Developed customer onboarding materials and trained fellow project managers on the portal pilot.",
+    "impacts": [
+        "Leadership-approved pilot for three project managers",
+        "Centralizes project communication and submittal tracking",
+        "Standardizes customer onboarding materials",
+        "Supports consistent documentation and team adoption"
+    ],
+    "result": "A leadership-approved pilot that brings project visibility and structured follow-through into the equipment delivery workflow.",
+    "tools": [
+        "Client Portal",
+        "Project Tracking",
+        "Document Control",
+        "Customer Onboarding"
+    ]
+},
     {
       title: "Automated EMS Proposal Tool",
       role: "Proposal Coordinator",

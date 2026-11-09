@@ -36,15 +36,9 @@ const About: React.FC<AboutProps> = ({ id }) => {
             </div>
 
             <div className="space-y-6 text-neutral-text text-lg font-light leading-relaxed">
-              <p>
-                I work across the full operational lifecycle—supporting client implementation, proposals, contracts, and ongoing project execution—giving me a well-rounded understanding of how work moves from intake to delivery.
-              </p>
-              <p>
-                I've led and supported proposal efforts by organizing technical and commercial inputs, aligning Price Worksheets with customer goals and internal margin requirements, and coordinating cross-functional teams to ensure pricing is <span className="text-white font-normal">accurate, defensible, and executable</span>. This includes managing timelines, refining narratives, and ensuring every submission is on-brand and ready for presentation as proposals advance.
-              </p>
-              <p>
-                Alongside proposal work, I've supported client-facing operations and internal systems—maintaining clean data, validating pricing calculations, improving workflows, and building tools that reduce manual effort and risk. Whether I'm managing details, coordinating stakeholders, or automating repetitive tasks, my focus is always the same: <span className="text-white font-normal">clarity, consistency, and follow-through</span> that teams and clients can rely on.
-              </p>
+              <p>I’m a Project Manager at EPEC Solutions, managing engineered electrical equipment projects from purchase order through delivery, site setup, and closeout. My work spans switchboards, panelboards, solar skids, and PLC/HMI control systems.</p>
+              <p>I lead customer coordination, track drawings and submittals, confirm materials, and maintain production and delivery schedules. I also visit manufacturing facilities and customer sites to inspect equipment, witness testing, assess shipping damage, and document open items with photos and punch lists.</p>
+              <p>My background in proposals, contracts, client implementation, and automation helps me connect commercial commitments with execution. I bring the same focus to every project: <span className="text-white font-normal">clear ownership, accurate records, and consistent follow-through.</span></p>
             </div>
 
             <div className="grid grid-cols-2 gap-8 pt-4">
