@@ -1,5 +1,6 @@
 
 import React, { useState } from 'react';
+import Recommendations from '../components/Recommendations';
 
 interface DetailedExperienceProps {
   onBack: () => void;
@@ -402,6 +403,7 @@ const DetailedExperience: React.FC<DetailedExperienceProps> = ({ onBack }) => {
             </div>
           ))}
         </div>
+        <Recommendations />
       </div>
     </div>
   );

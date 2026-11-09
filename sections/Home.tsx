@@ -71,6 +71,15 @@ const Home: React.FC<HomeProps> = ({ id, onViewResume, onViewTools }) => {
         <div className="relative group perspective-1000 z-0">
           <div className="absolute -inset-10 bg-gradient-to-tr from-primary/30 to-transparent rounded-[2rem] blur-[120px] opacity-40 group-hover:opacity-70 transition duration-1000"></div>
           
+          <div className="relative z-20 flex justify-center mb-7">
+            <a href="https://naomi-professional-recommendations.naomifdonley.chatgpt.site/" target="_blank" rel="noopener noreferrer"
+              className="relative inline-flex items-center gap-3 rounded-2xl bg-primary px-6 py-4 text-background-dark shadow-xl motion-safe:animate-bounce focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary hover:bg-white transition-colors"
+              style={{ animationDuration: '3s', animationIterationCount: 3 }}>
+              <span className="material-symbols-outlined text-2xl" aria-hidden="true">chat_bubble</span>
+              <span><span className="block text-sm font-bold">Worked with Naomi?</span><span className="block text-xs mt-1">Click here to leave a review ↗</span></span>
+              <span aria-hidden="true" className="absolute -bottom-2 left-1/2 h-4 w-4 -translate-x-1/2 rotate-45 bg-inherit"></span>
+            </a>
+          </div>
           <div className="relative aspect-[4/5] md:aspect-square w-full max-w-lg mx-auto overflow-hidden rounded-[2rem] bg-surface-dark border border-white/5 shadow-2xl transition-all duration-700 hover:scale-[1.02] hover:border-primary/20">
             {/* Naomi's Portrait - Use a clear placeholder representing the provided headshot */}
             <img
