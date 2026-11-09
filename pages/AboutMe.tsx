@@ -26,7 +26,7 @@ const AboutMe: React.FC<AboutMeProps> = ({ onBack }) => {
             <div className="p-8 rounded-2xl bg-surface-dark border border-white/5 space-y-4">
               <p className="text-primary font-bold text-[10px] uppercase tracking-widest">Mission Statement</p>
               <p className="text-white text-xl font-light italic leading-relaxed">
-                "I support proposal, client, and implementation operations by aligning customer needs, pricing, and internal delivery — ensuring commitments are clear, accurate, and executable."
+                "I bring people, processes, and projects together to turn complex requirements into clear plans and dependable results. Through project ownership, field coordination, and practical process improvements, I help teams solve problems, deliver on commitments, and build better ways of working."
               </p>
             </div>
             <div className="space-y-6 text-neutral-text text-lg font-light leading-relaxed">
@@ -53,14 +53,14 @@ const AboutMe: React.FC<AboutMeProps> = ({ onBack }) => {
                 <span className="material-symbols-outlined text-primary text-3xl">hub</span>
                 <h3 className="text-white text-2xl font-light">Coordination Engine</h3>
                 <p className="text-neutral-text text-sm font-light leading-relaxed">
-                  I specialize in end-to-end coordination — from intake to execution. I focus on translating client and sales requests into clear, executable proposals while aligning scope, pricing, and service assumptions before commitments are made.
+                  I manage the details that connect planning with execution: customer requirements, scope, drawings, materials, schedules, and handoffs. From the project office to the factory and customer site, I track open items, communicate risks, and follow through on the next step.
                 </p>
               </div>
               <div className="p-10 rounded-2xl bg-surface-dark border border-white/5 space-y-6">
                 <span className="material-symbols-outlined text-primary text-3xl">account_tree</span>
                 <h3 className="text-white text-2xl font-light">Cross-Functional Liaison</h3>
                 <p className="text-neutral-text text-sm font-light leading-relaxed">
-                  I coordinate across Sales, Engineering, Operations, and Leadership teams. I’m known for bringing structure to complex or ambiguous workflows and for improving how information flows between teams.
+                  I coordinate across customers, Sales, Engineering, Operations, manufacturing partners, field teams, and Leadership. I’m known for bringing structure to complex or ambiguous workflows and for improving how information flows between teams.
                 </p>
               </div>
             </div>
@@ -77,8 +77,8 @@ const AboutMe: React.FC<AboutMeProps> = ({ onBack }) => {
               </div>
               <ul className="space-y-4">
                 {[
-                  "Improving proposal workflows and standardizing inputs",
-                  "Reducing manual effort in drafting and pricing coordination",
+                  "Standardizing project workflows, records, and handoffs",
+                  "Reducing manual work through practical tools and automation",
                   "Supporting faster turnaround times without sacrificing quality",
                   "Ensuring teams access the right information at the right time"
                 ].map((item, i) => (
@@ -106,7 +106,7 @@ const AboutMe: React.FC<AboutMeProps> = ({ onBack }) => {
                 What differentiates me is my ability to bridge client expectations and internal delivery. I naturally sit at the intersection of client needs, sales objectives, and operational constraints.
               </p>
               <p className="text-neutral-text font-light leading-relaxed">
-                I’m comfortable navigating competing priorities, facilitating alignment across teams, and ensuring commitments made during proposals or onboarding are achievable.
+                I’m comfortable navigating competing priorities, resolving issues across teams, and following a project through production, inspections, testing, delivery, and closeout. I combine that field perspective with experience in proposals, contracts, and client onboarding.
               </p>
             </div>
             <div className="space-y-8">
@@ -114,7 +114,7 @@ const AboutMe: React.FC<AboutMeProps> = ({ onBack }) => {
               <div className="grid grid-cols-1 gap-4">
                 {[
                   { label: "Ownership", text: "Clear ownership and follow-through on all deliverables." },
-                  { label: "Accuracy", text: "Accurate, well-aligned proposals that protect quality." },
+                  { label: "Accuracy", text: "Reliable project records, clear requirements, and attention to equipment quality." },
                   { label: "Collaboration", text: "Collaborative, cross-functional focus on internal success." },
                   { label: "Dependability", text: "Proactive, organized, and trusted to keep things moving." }
                 ].map((item, i) => (
@@ -136,11 +136,13 @@ const AboutMe: React.FC<AboutMeProps> = ({ onBack }) => {
                 </div>
                 <div className="flex flex-wrap justify-center gap-3">
                    {[
-                     "Proposal Coordination & Management",
+                     "Project Management & Delivery",
+                     "Field Operations & Equipment Inspections",
+                     "Proposals & Commercial Coordination",
                      "Client Services & Account Coordination",
-                     "Sales Operations & Support",
+                     "Procurement & Vendor Coordination",
                      "Implementation & Onboarding Coordination",
-                     "Database & Document Management",
+                     "Submittals & Document Control",
                      "Process Automation & Tooling"
                    ].map((item, i) => (
                      <div key={i} className="px-6 py-4 rounded-xl border border-white/10 bg-background-dark/60 text-white text-sm font-light hover:border-primary/40 hover:text-primary transition-all cursor-default">
